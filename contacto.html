@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+    <title>Web Alonso Flores</title>
+</head>
+<body>
+    <div>
+        <form action="http://formadorestic.com/examenLLMM/procesa_taller.php" method="POST">
+            <label for="nombre">Nombre cliente</label><br>
+            <input type="text" id="nombre" name="NOMBRE"><br><br>
+            <label for="email">Email cliente</label><br>
+            <input type="email" id="email" name="email_cli"><br><br>
+            <label for="anho">Año matriculación del coche</label><br>
+            <input type="year" id="anho" name="anyo_mat"><br><br>
+            <label for="observaciones">Observaciones</label><br>
+            <textarea id="observaciones" name="obs"></textarea><br><br>
+            Seleccione la opción correcta: <br>
+            <input type="radio" id="terceros" name="tipo_seguro" value="Seguro a terceros">
+            <label for="terceros">Seguro a terceros</label><br>
+            <input type="radio" id="todoriesgo" name="tipo_seguro" value="Seguro a todo riesgo">
+            <label for="todoriesgo">Seguro a todo riesgo</label><br><br>
+            <label for="telefono">Teléfono cliente</label><br>
+            <input type="tel" id="telefono" name="tel_cli"><br><br>
+            <label for="horas">Horas preferidas para llamar</label><br>
+            <select id="horas" name="rango_llamadas">
+                <option value="rango" selected disabled>Seleccione rango</option>
+                <option value="8-12">8-12</option>
+                <option value="12-16">12-16</option>
+                <option value="16-20">16-20</option>
+            </select><br><br>
+            <input type="reset" value="Resetear">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div>
+        <p>Pulse la flecha para volver al inicio</p>
+        <a href="inicio.html">
+            <img src="flechaizq.png" alt="flecha">
+        </a>
+    </div>
+</body>
+</html>
